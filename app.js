@@ -27,7 +27,6 @@ app.get('/', (req, res) => {
 });
 
 app.post('/', (req, res) => {
-    console.log(req.body.list)
     let item = req.body.newItem;
     if (req.body.list === "Work") {
         workList.push(item);
